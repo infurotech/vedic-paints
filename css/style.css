@@ -223,7 +223,7 @@ button {
 .header_section {
     width: 100%;
     float: left;
-    background-image: url(../images/banner-bg.png);
+    background-color: #dfcc96;
     height: auto;
     padding: 15px 0px;
     background-size: cover;
@@ -950,3 +950,62 @@ input.mail_bt::placeholder {
 .margin_top{
     margin-top: 90px;
 }
+.blurred-bg-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #000;
+  }
+  
+  .blurred-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(12px);
+    transform: scale(1.1); /* prevent cropping */
+    z-index: 1;
+    opacity: 0.6;
+  }
+  
+  .foreground-image {
+    position: relative;
+    z-index: 2;
+    max-height: 100%;
+    max-width: auto;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Optional middle overlay icon styling */
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+  }
+  
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    background-color: #25D366;
+    border-radius: 50%;
+    padding: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+  }
+  .whatsapp-float:hover {
+    transform: scale(1.1);
+  }
+  .whatsapp-float img {
+    width: 32px;
+    height: 32px;
+  }
