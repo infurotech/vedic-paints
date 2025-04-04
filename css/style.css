@@ -234,6 +234,9 @@ button {
     width: 100%;
     float: left;
 }
+.logo img{
+    height: 40px;
+}
 .menu_main {
     font-size: 16px;
     color: #fff;
@@ -430,6 +433,7 @@ button {
     width: 500px;
     height: 1px;
     top: 32px;
+    display: none;
 }
 .advisor_section{
     width: 100%;
@@ -626,7 +630,7 @@ button {
 .portfolio_section_2 {
     width: 100%;
     float: left;
-    background-image: url(../images/portfolio-bg.png);
+    background-image: url(../images/banner-bg.jpg);
     height: auto;
     background-size: cover;
     padding-bottom: 60px;
@@ -1563,5 +1567,25 @@ input.mail_bt::placeholder {
     
     .shade_item {
         height: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    #my_slider .carousel-item img{
+        height: auto !important;
+    }
+    .product-title{
+        line-clamp: none;
+        -webkit-line-clamp: none;
+    }
+
+    .flex-dir-column{
+        flex-direction: column !important;
+    }
+    .newsletter_section{
+        margin-top: 20px;
+    }
+    .footer_section p{
+        margin-top : 0;
     }
 }
