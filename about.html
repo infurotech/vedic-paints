@@ -32,47 +32,91 @@
 </head>
 <body>
   <!--header section start -->
-    <div class="header_section background_bg">
-      <div class="container-fluid">
-        <div class="row">
+  <div class="header_section">
+    <div class="container-fluid">
+       <div class="row align-items-center">
           <div class="col-md-3">
-            <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+             <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
           </div>
           <div class="col-md-9">
-            <div class="menu_text">
-              <ul>
-                <div id="myNav" class="overlay">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="overlay-content">
-                  <a href="index.html">Home</a>
-                  <a href="blog.html">Blog</a>
-                  <a href="about.html">About</a>
-                  <a href="services.html">Services</a>
-                  <a href="client.html">Client</a>
-                  <a href="contact.html">Contact Us</a>
-                </div>
-                </div>
-                <span class="navbar-toggler-icon"></span>
-                <span onclick="openNav()"><img src="images/toogle-icon.png" class="toggle_menu"></span>
-                </div>  
-                </li>
-              </ul>
-            </div>
+             <div class="menu_text">
+                <nav class="navbar navbar-expand-lg navbar-light p-0">
+                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="openNav()">
+                      <img src="images/toogle-icon.png" class="toggle_menu">
+                   </button>
+                   <!-- Desktop Menu -->
+                   <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                           <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item active">
+                           <a class="nav-link" href="benefits.html">Benefits</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                      </ul>
+                   </div>
+                   <!-- Mobile Menu Overlay -->
+                   <div id="myNav" class="overlay d-lg-none">
+                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                      <div class="overlay-content">
+                        <a href="index.html">Home</a>
+                        <a href="products.html">Products</a>
+                        <a href="benefits.html">Benefits</a>
+                        <a href="about.html">About</a>
+                        <a href="services.html">Services</a>
+                        <a href="contact.html">Contact Us</a>
+                      </div>
+                   </div>
+                </nav>
+             </div>
           </div>
-        </div>
+       </div>
     </div>
-    <!-- header section end -->
+  </div>
+  <!-- header section end -->
     <!-- about section start -->
     <div class="about_section layout_padding">
     	<div class="container">
     		<div class="row">
-    			<div class="col-sm-6">
-    				<div><img src="images/img-8.png" class="image_8"></div>
+    			<div class="col-lg-7 col-sm-12">
+				<div class="about_content">
+					<h1 class="what_text remove-after">Time to <span class="text-success">Get back to our roots</span></h1>
+					<p class="about_text ml-0">A human being consumes 2 kg of Food, 3 Litre of water & 11,000 Litre of breathe in 24 hours. For 2 Kg Food we prefer organic For 3 Litre water, we prefer Mineral water/ RO water but for breathing, we do not care which is 5500 times more important than Food and Water. We paint our houses with chemical paints which directly affects our health and we fall ill.</p>
+					
+					<div class="mt-4">
+						<h2 class="mb-3">Why Natural Vedic Paints?</h2>
+						<p class="about_text ml-0">The Natural Vedic Paints manufactured by Doot Naturals (which were used in old Palaces & Havelis) are Totally Free from VOC. These paints are exclusively made with Natural substances such as:</p>
+						<ul class="list-unstyled mt-3">
+							<li><i class="fa fa-leaf text-success me-2"></i> Lime powder</li>
+							<li><i class="fa fa-leaf text-success me-2"></i> Indigenous Holy cow dung</li>
+							<li><i class="fa fa-leaf text-success me-2"></i> Jaggery</li>
+							<li><i class="fa fa-leaf text-success me-2"></i> Methi</li>
+							<li><i class="fa fa-leaf text-success me-2"></i> Red soil</li>
+							<li><i class="fa fa-leaf text-success me-2"></i> Yellow soil</li>
+						</ul>
+						<p class="about_text mt-3 ml-0">The Natural Vedic Paint by Doot Naturals are 100% Chemical Free and maintains positives energy in the houses.</p>
+					</div>
+
+					<div class="quote_section mt-5">
+						<h2 class="text-success">"For Food we prefer organic"</h2>
+						<p class="text-emphasis ml-0">For water, we prefer Mineral water/ RO water<b>But for breathing we do not care which is 5500 times more important than Food and Water.</b></p>
+					</div>
+				</div>
     			</div>
-    			<div class="col-sm-6">
-    				<h1 class="about_taital">About Us</h1>
-    				<p class="lorem_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
-    				<div class="more_bt"><a href="#">Read More </a></div>
+    			<div class="col-lg-5 col-sm-12">
+    				<div class="about_img"><img src="images/bb.png"></div>
     			</div>
     		</div>
     	</div>
@@ -84,15 +128,18 @@
     		<div class="row">
     			<div class="col-lg-3 col-sm-6">
     				<h4 class="address_text">ADDRESS</h4>
-    				<p class="simply_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been  </p>
+    				<p class="simply_text">Natural Vedic Paints<br>Rajasthan, India</p>
+                    <p class="simply_text"><strong>Phone:</strong> +91 xxxx-xxx-xxx</p>
+                    <p class="simply_text"><strong>Email:</strong> info@vedicpaints.com</p>
     			</div>
     			<div class="col-lg-3 col-sm-6">
     				<h4 class="address_text">QUICK LINKS</h4>
     				<div class="footer_menu_main">
     				    <div class="footer_menu">
     				    	<ul>
-    				    		<li><a href="index.html.html">Home</a></li>
-    				    		<li><a href="blog.html">Blog</a></li>
+    				    		<li><a href="index.html">Home</a></li>
+    				    		<li><a href="products.html">Products</a></li>
+    				    		<li><a href="benefits.html">Benefits</a></li>
     				    		<li><a href="about.html">About</a></li>
     				    		<li><a href="services.html">Services</a></li>
     				    		<li><a href="contact.html">Contact Us</a></li>
@@ -122,10 +169,13 @@
     		</div>
     	</div>
     </div>
+    <a href="https://wa.me/918561872276" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <img src="images/whatsapp-icon.png" alt="WA" />
+    </a>
     <!-- footer section end -->
     <!-- copyright section start -->
     <div class="copyright_section">
-    	<div class="copyright_text">Copyright 2020 All Right Reserved By <a href="https://html.design">Free html  Templates</a></div>
+    	<div class="copyright_text">Copyright 2025 All Rights Reserved By Natural Vedic Paints</div>
     </div>
     <!-- copyright section end -->
     <!-- Javascript files-->
