@@ -331,7 +331,7 @@ button {
 
 .banner_section .more_bt a,
 .banner_section .contact_bt a {
-    padding: 12px 35px;
+    padding: 12px 24px;
     border-radius: 30px;
     text-decoration: none;
     font-size: 16px;
@@ -1802,6 +1802,9 @@ input.mail_bt::placeholder {
     .footer_section p{
         margin-top : 0;
     }
+    .banner_section::after{
+        display: none;
+    }
 }
 
 .video-block{
@@ -1820,3 +1823,11 @@ input.mail_bt::placeholder {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 767px) {
+    .box_section .col-lg-4{
+        margin-bottom: 50px  !important;
+    }
+    #carouselExampleIndicators .col-lg-4{
+        margin-bottom: 50px  !important;
+    }
+}
